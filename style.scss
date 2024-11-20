@@ -1,0 +1,83 @@
+$cor-primaria: #d2c7ff;
+$cor-secundaria: #0d0d55;
+$cor-terciaria: #d9f203;
+$cor-quartenaria: #ff99db;
+$tamanho: 10px;
+
+body {
+    color: $cor-secundaria;
+    background-color: $cor-primaria;
+}
+
+h1, h2, h3 {
+    color: $cor-secundaria;
+}
+
+button {
+    background-color: $cor-primaria;
+    border: 2px solid $cor-quartenaria;
+}
+
+.bt-secundario {
+    background-color: $cor-quartenaria;
+    border: 2px solid $cor-secundaria;
+    margin: 5px;
+    padding: $tamanho;
+}
+
+input {
+    border: 2px solid $cor-secundaria;
+    padding: $tamanho;
+}
+
+/*Aninhamento usando form colocamos as caracteristicas de tudo dentro do form em um lugar só */
+form {
+    
+    input {
+        border: 2px solid $cor-terciaria;
+        padding: 5px;
+    }
+
+    button {
+        background-color: $cor-terciaria;
+        border: 2px solid $cor-secundaria;
+    }
+}
+
+/*Herança criamos alterações iguais sem ficar*/
+.atividade {
+    .campos {
+        padding: $tamanho;
+        border: 2px solid $cor-terciaria;
+    }
+
+    .titulo {
+        background-color: $cor-quartenaria;
+
+    }
+
+    .botao-1 {
+        @extend .campos;
+        background-color: $cor-primaria;
+    }
+    
+    .botao-2 {
+        @extend .campos;
+        background-color: $cor-terciaria;
+    }
+
+    .botao-3 {
+        @extend .campos;
+        background-color: $cor-quartenaria;
+    }
+
+    h1 {
+        @extend .titulo;
+        color: $cor-primaria;
+    }
+
+    h3 {
+        @extend .titulo;
+        color: $cor-terciaria;
+    }
+}

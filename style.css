@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body {
+  color: #0d0d55;
+  background-color: #d2c7ff;
+}
+
+h1, h2, h3 {
+  color: #0d0d55;
+}
+
+button {
+  background-color: #d2c7ff;
+  border: 2px solid #ff99db;
+}
+
+.bt-secundario {
+  background-color: #ff99db;
+  border: 2px solid #0d0d55;
+  margin: 5px;
+  padding: 10px;
+}
+
+input {
+  border: 2px solid #0d0d55;
+  padding: 10px;
+}
+
+/*Aninhamento usando form colocamos as caracteristicas de tudo dentro do form em um lugar só */
+form input {
+  border: 2px solid #d9f203;
+  padding: 5px;
+}
+form button {
+  background-color: #d9f203;
+  border: 2px solid #0d0d55;
+}
+
+/*Herança criamos alterações iguais sem ficar*/
+.atividade .campos, .atividade .botao-3, .atividade .botao-2, .atividade .botao-1 {
+  padding: 10px;
+  border: 2px solid #d9f203;
+}
+.atividade .titulo, .atividade h3, .atividade h1 {
+  background-color: #ff99db;
+}
+.atividade .botao-1 {
+  background-color: #d2c7ff;
+}
+.atividade .botao-2 {
+  background-color: #d9f203;
+}
+.atividade .botao-3 {
+  background-color: #ff99db;
+}
+.atividade h1 {
+  color: #d2c7ff;
+}
+.atividade h3 {
+  color: #d9f203;
+}
+
+/*# sourceMappingURL=style.css.map */
