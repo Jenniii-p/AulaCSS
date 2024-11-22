@@ -1,0 +1,63 @@
+body {
+    background-color: #E6F4FF;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav img {
+    width: 40px;
+    height: 40px;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    list-style: none;
+    padding: 5px;
+  }
+  nav li:hover {
+    background-color: rgb(170.7333333333, 101.4, 245.4);
+  }
+  nav a {
+    text-decoration: none;
+    color: #630BC1;
+  }
+  
+  main {
+    background-image: url("https://catracalivre.com.br/cdn-cgi/image/f=auto,q=60,width=960,height=99999,fit=scale-down/wp-content/uploads/2023/11/istock-1221548744.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1,
+  h4 {
+    color: #630BC1;
+  }
+  
+  input {
+    border: 2x solid #630BC1;
+    margin: 5px;
+  }
+  
+  button {
+    background-color: #B06FF6;
+    border-color: #630BC1;
+  }
+  
+  button:hover {
+    background-color: rgb(189.1666666667, 135, 247.5);
+  }

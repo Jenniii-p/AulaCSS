@@ -9,66 +9,90 @@ body {
     background-color: $cor-primaria;
 }
 
-h1, h2, h3 {
-    color: $cor-secundaria;
-}
+.atividade1 {
 
-button {
-    background-color: $cor-primaria;
-    border: 2px solid $cor-quartenaria;
-}
-
-.bt-secundario {
-    background-color: $cor-quartenaria;
-    border: 2px solid $cor-secundaria;
-    margin: 5px;
-    padding: $tamanho;
-}
-
-input {
-    border: 2px solid $cor-secundaria;
-    padding: $tamanho;
-}
-
-/*Aninhamento usando form colocamos as caracteristicas de tudo dentro do form em um lugar só */
-form {
-    
-    input {
-        border: 2px solid $cor-terciaria;
-        padding: 5px;
+    h1,
+    h2,
+    h3 {
+        color: $cor-secundaria;
     }
 
     button {
-        background-color: $cor-terciaria;
+        background-color: $cor-primaria;
+        border: 2px solid $cor-quartenaria;
+    }
+
+    .bt-secundario {
+        background-color: $cor-quartenaria;
         border: 2px solid $cor-secundaria;
+        margin: 5px;
+        padding: $tamanho;
+    }
+
+    input {
+        border: 2px solid $cor-secundaria;
+        padding: $tamanho;
+    }
+
+    /*Aninhamento usando form colocamos as caracteristicas de tudo dentro do form em um lugar só */
+    form {
+
+        input {
+            border: 2px solid $cor-terciaria;
+            padding: 5px;
+        }
+
+        button {
+            background-color: $cor-terciaria;
+            border: 2px solid $cor-secundaria;
+        }
     }
 }
 
 /*Herança criamos alterações iguais sem ficar*/
-.atividade {
+.atividade2 {
+    $cor-botao-primario: green;
+    $cor-botao-secundario: red;
+    $cor-botao-terciario: orange;
+
     .campos {
-        padding: $tamanho;
+        padding: 5px;
         border: 2px solid $cor-terciaria;
+        text-transform: uppercase;
     }
 
     .titulo {
         background-color: $cor-quartenaria;
-
     }
 
-    .botao-1 {
+    .botao-primario {
         @extend .campos;
-        background-color: $cor-primaria;
-    }
-    
-    .botao-2 {
-        @extend .campos;
-        background-color: $cor-terciaria;
+        background-color: aquamarine;
     }
 
-    .botao-3 {
+    .botao-primario:hover {
+        background-color: darken($cor-botao-primario, 5%);
+        border-color: darken($cor-botao-primario, 5%);
+    }
+
+    .botao-secundario {
         @extend .campos;
-        background-color: $cor-quartenaria;
+        background-color: red;
+    }
+
+    .botao-secundario:hover {
+        background-color: lighten($cor-botao-secundario, 30%);
+        border-color: lighten($cor-botao-secundario, 30%);
+    }
+
+    .botao-terciario {
+        @extend .campos;
+        background-color: orange;
+    }
+
+    .botao-terciario:hover {
+        background-color: darken($cor-botao-terciario, 5%);
+        border-color: darken($cor-botao-terciario, 5%);
     }
 
     h1 {
