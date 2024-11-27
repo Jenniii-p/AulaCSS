@@ -14,10 +14,10 @@ body {
 }
 .atividade1 button {
   background-color: #d2c7ff;
-  border: 2px solid #ff99db;
+  border: 2px solid #070005;
 }
 .atividade1 .bt-secundario {
-  background-color: #ff99db;
+  background-color: #070005;
   border: 2px solid #0d0d55;
   margin: 5px;
   padding: 10px;
@@ -42,7 +42,7 @@ body {
   text-transform: uppercase;
 }
 .atividade2 .titulo, .atividade2 h3, .atividade2 h1 {
-  background-color: #ff99db;
+  background-color: #070005;
 }
 .atividade2 .botao-primario {
   background-color: aquamarine;
@@ -70,4 +70,46 @@ body {
 }
 .atividade2 h3 {
   color: #d9f203;
+}
+
+.atividade3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.atividade3 .card-primario {
+  background-color: #d9f203;
+  color: #0d0d55;
+  border-radius: 10px;
+  border: 2px solid #d9f203;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 2px 10px #070005;
+}
+.atividade3 .card-secundario {
+  background-color: #0d0d55;
+  color: #d2c7ff;
+  border-radius: 10px;
+  border: 2px solid #0d0d55;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 2px 10px #070005;
+}
+.atividade3 .card-terciario {
+  background-color: #0d0d55;
+  color: #d9f203;
+  border-radius: 10px;
+  border: 2px solid #0d0d55;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 2px 10px #070005;
 }

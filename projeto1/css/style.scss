@@ -1,5 +1,7 @@
 $cor-primaria: #B06FF6;
-$cor-secundaria: #630BC1;
+$cor-secundaria: #28054e;
+$cor-texto-primaria:rgb(39, 3, 39);
+$cor-texto-secundaria:white;
 
 body {
     background-color: #E6F4FF;
@@ -35,15 +37,17 @@ nav {
 
     a {
         text-decoration: none;
-        color: $cor-secundaria;
+        color: $cor-texto-primaria;
     }
 }
 
 main {
-    background-image: url("https://catracalivre.com.br/cdn-cgi/image/f=auto,q=60,width=960,height=99999,fit=scale-down/wp-content/uploads/2023/11/istock-1221548744.jpg");
+    background-image: url("https://m.media-amazon.com/images/I/71jsgnrWfbL._AC_UF894,1000_QL80_.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     min-height: 500px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     align-items: center;
     display: flex;
@@ -53,19 +57,39 @@ main {
 
 h1,
 h4 {
-    color: $cor-secundaria;
+    color: $cor-texto-primaria;
 }
 
 input {
     border: 2x solid $cor-secundaria;
     margin: 5px;
+    border-radius: 5px;
 }
 
 button {
     background-color: $cor-primaria;
     border-color: $cor-secundaria;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: lighten($cor-primaria, 5%);
+    border-radius: 5px;
+}
+
+label{
+    font-size: 15px;
+    color: $cor-texto-secundaria;
+}
+
+.ultimos-conteudos{
+    table{
+        width: 100%;
+        color:$cor-secundaria;
+        text-align: center;
+    }
+
+    td{
+        border: 2px solid $cor-secundaria;
+    }
 }
