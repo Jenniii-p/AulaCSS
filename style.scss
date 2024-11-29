@@ -137,3 +137,25 @@ justify-content: space-around;
     @include card-styles ($cor-secundaria,$cor-terciaria,$tamanho);
 }
 }
+.loops{
+    $tamanhoTela:12;
+    @for $i from 1 through $tamanhoTela {
+        .col-#{$i}{
+            width: calc(100%/$tamanhoTela) * $i;
+        }
+    }
+
+    div{
+        height: 50px;
+        background-color: blue;
+        border: 2px solid white;
+    }
+
+    .linha{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+
+}

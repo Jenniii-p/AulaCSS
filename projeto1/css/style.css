@@ -72,11 +72,76 @@ label {
   color: white;
 }
 
+.ultimos-conteudos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ultimos-conteudos h2 {
+  display: flex;
+  justify-content: center;
+}
 .ultimos-conteudos table {
   width: 100%;
-  color: #28054e;
   text-align: center;
+  font-size: 18px;
+}
+.ultimos-conteudos th {
+  border-bottom: 2px solid #5d458f;
+  color: rgb(39, 3, 39);
+  padding: 10px;
 }
 .ultimos-conteudos td {
-  border: 2px solid #28054e;
+  border-bottom: 1px solid #5d458f;
+  padding: 30px;
+}
+.ultimos-conteudos .col1 {
+  background-color: #B06FF6;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimos-conteudos .col3 {
+  background-color: #28054e;
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimos-conteudos .col4 {
+  background-color: rgb(63, 14, 63);
+  min-width: 80%;
+  color: white;
+  text-transform: uppercase;
+}
+.ultimos-conteudos .assunto {
+  display: flex;
+  justify-content: center;
+}
+.ultimos-conteudos .avaliar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ultimos-conteudos .avaliar .like {
+  color: green;
+}
+.ultimos-conteudos .avaliar .dlike {
+  color: red;
+}
+.ultimos-conteudos .avaliar .star {
+  color: gold;
+}
+.ultimos-conteudos .botao {
+  display: flex;
+  justify-content: center;
+}
+.ultimos-conteudos .botao button {
+  background-color: #B06FF6;
+  border-color: #28054e;
+  border-radius: 5px;
+}
+.ultimos-conteudos .botao button:hover {
+  background-color: rgb(189.1666666667, 135, 247.5);
+  border-radius: 5px;
 }

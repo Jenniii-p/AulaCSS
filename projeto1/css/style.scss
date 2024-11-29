@@ -2,6 +2,8 @@ $cor-primaria: #B06FF6;
 $cor-secundaria: #28054e;
 $cor-texto-primaria:rgb(39, 3, 39);
 $cor-texto-secundaria:white;
+$cor-texto-terciaria:rgb(63, 14, 63);
+$cor-borda:#5d458f;
 
 body {
     background-color: #E6F4FF;
@@ -83,13 +85,97 @@ label{
 }
 
 .ultimos-conteudos{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    @mixin tabelaUCA ($tamBorda){ 
+    border-bottom: $tamBorda solid $cor-borda; 
+    }
+
+    @mixin assuntos ($caixacolorida,$tamcaixa){
+        background-color: $caixacolorida;
+        min-width: $tamcaixa;
+        color:white;
+        text-transform: uppercase;
+    }
+    
+
     table{
         width: 100%;
-        color:$cor-secundaria;
         text-align: center;
+        font-size: 18px;
+    }
+
+    th{
+        @include tabelaUCA(2px);
+        color:$cor-texto-primaria;
+        padding: 10px;
     }
 
     td{
-        border: 2px solid $cor-secundaria;
+        @include tabelaUCA(1px);
+        padding: 30px;
+
     }
+
+    .col1{
+        @include assuntos($cor-primaria,80%);
+
+    }
+
+    .col3{
+        @include assuntos($cor-secundaria,80%);
+
+    }
+
+    .col4{
+        @include assuntos($cor-texto-terciaria,80%);
+
+    }
+    .assunto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .avaliar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-items: center;
+    
+    .like{
+        color:green;
+    }
+    
+    .dlike{
+        color: red;
+    }
+
+    .star{
+        color:gold;
+    }
+    }
+    .botao{
+        display: flex;
+        justify-content: center;
+
+    button{
+        background-color: $cor-primaria;
+        border-color: $cor-secundaria;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: lighten($cor-primaria, 5%);
+        border-radius: 5px;
+    }
+}
+   
 }
