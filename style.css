@@ -160,3 +160,13 @@ body {
   flex-direction: row;
   background-color: white;
 }
+
+.animacoes button {
+  background-color: #564697;
+  transition: background-color 1s, transform 1s;
+  padding: 10px;
+}
+.animacoes button:hover {
+  background-color: #d9f203;
+  transform: scale(1.5);
+}
